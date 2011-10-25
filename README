@@ -10,14 +10,14 @@ Config Files(text/xml):
 	<baseConf>
 		<numberOfCards>10</numberOfCards>
 	</baseConf>
-	<includes>
-		<card>Name of Card</card>
-		<type number='1'>Type of Cards</type>
-	</includes>
 	<additions>
 		<card>Name of Card</card>
 		<type number='1'>Type of Cards</type>
 	</additions>
+	<includes>
+		<card>Name of Card</card>
+		<type number='1'>Type of Cards</type>
+	</includes>
 	<excludes>
 		<card>Name of Card</card>
 		<type>Type of Cards</type>
@@ -29,7 +29,7 @@ Config Files(text/xml):
 
 CardList Files:
 <?xml version='1.0' standalone='yes'?>
-<cardList overAllType='Version'>
+<cardList overallType='Version'>
 	<card name='Name'>
 		<type>Type Of Card</type>
 		<type>2</type>
