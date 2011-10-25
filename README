@@ -1,0 +1,38 @@
+a PHP Dominion card selector project with several options
+
+Config Files(text/xml):
+<?xml version='1.0' standalone='yes'?>
+<DCSconf>
+	<cardLists>
+		<cardList src='path/to/cardList' />
+		<cardList src='path/to/cardList' />
+	</cardLists>
+	<baseConf>
+		<numberOfCards>10</numberOfCards>
+	</baseConf>
+	<includes>
+		<card>Name of Card</card>
+		<type number='1'>Type of Cards</type>
+	</includes>
+	<additions>
+		<card>Name of Card</card>
+		<type number='1'>Type of Cards</type>
+	</additions>
+	<excludes>
+		<card>Name of Card</card>
+		<type>Type of Cards</type>
+	</excludes>
+	<max>
+		<type number='1'>Type of Cards</type>
+	</max>
+</DCSconf>
+
+CardList Files:
+<?xml version='1.0' standalone='yes'?>
+<cardList overAllType='Version'>
+	<card name='Name'>
+		<type>Type Of Card</type>
+		<type>2</type>
+		<type>Action</type>
+	</card>
+</cardList>
