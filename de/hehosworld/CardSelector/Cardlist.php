@@ -14,16 +14,57 @@ class Cardlist
 	 */
 	private $cards;
 	
-	public function __construct(array $cards)
+	/**
+	 *
+	 * @param \de\hehosworld\CardSelector\Card $card 
+	 * @return Cardlist 
+	 */
+	public function addCard(\de\hehosworld\CardSelector\Card $card)
 	{
-		foreach($cards as $card)
+		$this->cards[$card->getName()] = $card;
+		
+		return $this;
+	}
+	
+	/**
+	 *
+	 * @param string $name 
+	 * @return Cardlist 
+	 */
+	public function deleteCardByName(string $name)
+	{
+		unset($this->cards[$name]);
+		
+		return $this;
+	}
+	
+	/**
+	 *
+	 * @param \de\hehosworld\CardSelector\Card $card
+	 * @return Cardlist 
+	 */
+	public function deleteCard(\de\hehosworld\CardSelector\Card $card)
+	{
+		$this->cards = array_diff($this->cards, array($card));
+		
+		return $this;
+	}
+	
+	/**
+	 *
+	 * @param string $type
+	 * @return Cardlist 
+	 */
+	public function deleteAllCardsWithType(string $type)
+	{
+		foreach($this->cards as $card)
 		{
-			if(!($card instanceof \de\hehosworld\CardSelector\Card))
+			if($card->hasType($type))
 			{
-				throw new \InvalidArgumentException('Parameter $cards must be array of Cards');
+				unset($this->cards[$card->getName()]);
 			}
 		}
 		
-		$this->cards = $cards;
+		return $this;
 	}
 }
