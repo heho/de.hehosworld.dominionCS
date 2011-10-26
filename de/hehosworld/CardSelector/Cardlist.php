@@ -31,7 +31,7 @@ class Cardlist
 	 * @param string $name 
 	 * @return Cardlist 
 	 */
-	public function deleteCardByName(string $name)
+	public function deleteCardByName($name)
 	{
 		unset($this->cards[$name]);
 		
@@ -55,7 +55,7 @@ class Cardlist
 	 * @param string $type
 	 * @return Cardlist 
 	 */
-	public function deleteAllCardsWithType(string $type)
+	public function deleteAllCardsWithType($type)
 	{
 		foreach($this->cards as $card)
 		{

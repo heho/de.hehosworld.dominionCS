@@ -34,7 +34,7 @@ class Card
 	 * @param array of string $types
 	 * @param array of array $information 
 	 */
-	public function __construct(string $name, array $types, array $informations = array()) 
+	public function __construct($name, array $types, array $informations = array()) 
 	{
 		foreach($types as $type)
 		{
@@ -63,7 +63,7 @@ class Card
 	 * @param String $type
 	 * @return Boolean 
 	 */
-	public function hasType(string $type)
+	public function hasType($type)
 	{
 		return in_array($type, $this->types);
 	}

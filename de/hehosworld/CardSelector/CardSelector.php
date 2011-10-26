@@ -8,7 +8,10 @@ namespace de\hehosworld\CardSelector;
  */
 class CardSelector
 {
-	
+	/**
+	 *
+	 * @var \SimpleXMLElement
+	 */
 	private $config;
 	
 	/**
@@ -20,12 +23,21 @@ class CardSelector
 
 	/**
 	 * 
-	 * @var \de\hehosworld\CardSelector\CardList
+	 * @var \de\hehosworld\CardSelector\Cardlist
 	 */
-	private $cardlist;
+	private $inputCardlist;
 	
+	/**
+	 *
+	 * @var \de\hehosworld\CardSelector\Cardlist
+	 */
+	private $outputCardlist;
 	
-	public function __construct(string $configSource)
+	/**
+	 *
+	 * @param string $configSource 
+	 */
+	public function __construct($configSource)
 	{
 		try
 		{
@@ -33,8 +45,11 @@ class CardSelector
 		}
 		catch(\Exception $e)
 		{
-		
+			throw new \de\hehosworld\CardSelector\Exceptions\IOException('File '
+					. 'cant be opened.');
 		}
+		
+		echo $this->cardCount = $this->config->baseConf->numberOfCards;
 	}
 	
 	public function generateCardArray()
