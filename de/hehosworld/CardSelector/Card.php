@@ -24,9 +24,9 @@ class Card
 	/**
 	 * Additional Information on Cards
 	 * 
-	 * @var array of array;
+	 * @var array of string;
 	 */
-	private $information;
+	private $informations;
 	
 	/**
 	 *
@@ -34,18 +34,36 @@ class Card
 	 * @param array of string $types
 	 * @param array of array $information 
 	 */
-	function __construct($name, $types, $information = array()) 
+	public function __construct(string $name, array $types, array $informations = array()) 
 	{
+		foreach($types as $type)
+		{
+			if(gettype($type) !== "string")
+			{
+				throw new \InvalidArgumentException('Parameter $types must be array of string');
+			}
+		}
+		
+		foreach($informations as $information)
+		{
+			if(gettype($information) !== "string")
+			{
+				throw new \InvalidArgumentException('Parameter $informations must be array of string');
+			}
+		}
+		
+		
 		$this->name = $name;
 		$this->types = $types;
-		$this->information = $information;
+		$this->informations = $informations;
 	}
-	
+
+
 	/**
 	 * @param String $type
 	 * @return Boolean 
 	 */
-	function hasType($type)
+	public function hasType(string $type)
 	{
 		return in_array($type, $this->types);
 	}
@@ -53,7 +71,7 @@ class Card
 	/**
 	 * @return array of String
 	 */
-	function getTypes()
+	public function getTypes()
 	{
 		return $this->types;
 	}
@@ -62,7 +80,7 @@ class Card
 	 *
 	 * @return String
 	 */
-	function getName()
+	public function getName()
 	{
 		return $this->name;
 	}
@@ -70,7 +88,7 @@ class Card
 	/**
 	 * @return array of arrays
 	 */
-	function getInformation()
+	public function getInformation()
 	{
 		return $this->information;
 	}

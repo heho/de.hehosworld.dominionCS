@@ -8,6 +8,9 @@ namespace de\hehosworld\CardSelector;
  */
 class CardSelector
 {
+	
+	private $config;
+	
 	/**
 	 * Number of Cards to be selected
 	 * 
@@ -17,17 +20,24 @@ class CardSelector
 
 	/**
 	 * 
-	 * @var array of
+	 * @var \de\hehosworld\CardSelector\CardList
 	 */
-	private $cards;
+	private $cardlist;
 	
 	
-	function __construct($configSource)
+	public function __construct(string $configSource)
 	{
+		try
+		{
+			$this->config = simplexml_load_file($configSource);
+		}
+		catch(\Exception $e)
+		{
 		
+		}
 	}
 	
-	function generateCardArray()
+	public function generateCardArray()
 	{
 		
 	}
