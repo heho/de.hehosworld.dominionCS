@@ -34,7 +34,7 @@ class Card
 	 * @param array of string $types
 	 * @param array of array $information 
 	 */
-	public function __construct($name, array $types, array $informations = array()) 
+	public function __construct($name, array $types = array(), array $informations = array()) 
 	{
 		foreach($types as $type)
 		{
@@ -58,7 +58,15 @@ class Card
 		$this->informations = $informations;
 	}
 
-
+	/**
+	 *
+	 * @param string $type 
+	 */
+	public function addType($type)
+	{
+		$this->types[] = $type;
+	}
+	
 	/**
 	 * @param String $type
 	 * @return Boolean 
@@ -82,7 +90,7 @@ class Card
 	 */
 	public function getName()
 	{
-		return $this->name;
+		return "\"" . $this->name . "\"";
 	}
 	
 	/**
@@ -91,5 +99,20 @@ class Card
 	public function getInformation()
 	{
 		return $this->information;
+	}
+	
+	/**
+	 *
+	 * @return string 
+	 */
+	public function __toString()
+	{
+		$string = "Card:\n";
+		$string .= "Name: " . $this->name . "\n Types: ";
+		foreach($this->types as $type)
+		{
+			$string .= $type . ", ";
+		}
+		return $string;
 	}
 }

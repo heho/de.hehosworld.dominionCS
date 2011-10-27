@@ -3,10 +3,10 @@ a PHP Dominion card selector project with several options
 Config Files(text/xml):
 <?xml version='1.0' standalone='yes'?>
 <DCSconf>
-	<cardLists>
-		<cardList src='path/to/cardList' />
-		<cardList src='path/to/cardList' />
-	</cardLists>
+	<cardlists>
+		<cardlist src='path/to/cardList' />
+		<cardlist src='path/to/cardList' />
+	</cardlists>
 	<baseConf>
 		<numberOfCards>10</numberOfCards>
 	</baseConf>
@@ -29,10 +29,10 @@ Config Files(text/xml):
 
 CardList Files:
 <?xml version='1.0' standalone='yes'?>
-<cardList overallType='Version'>
+<cardlist overallType='Version'>
 	<card name='Name'>
 		<type>Type Of Card</type>
 		<type>2</type>
 		<type>Action</type>
 	</card>
-</cardList>
+</cardlist>
