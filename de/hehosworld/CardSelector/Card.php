@@ -75,7 +75,7 @@ class Card
 	{
 		foreach($this->types as $type)
 		{
-			if($type === $checktype)
+			if(strtolower((string)$type) === strtolower((string)$checktype))
 			{
 				return true;
 			}
