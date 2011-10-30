@@ -21,7 +21,7 @@ class Cardlist
 	 */
 	public function addCard(\de\hehosworld\CardSelector\Card $card)
 	{
-		$this->cards[$card->getName()] = $card;
+		$this->cards[str_replace("\"", "", $card->getName())] = $card;
 		
 		return $this;
 	}
@@ -59,9 +59,9 @@ class Cardlist
 	{
 		foreach($this->cards as $card)
 		{
-			if($card->hasType($type))
+			if($card->hasType((string)$type))
 			{
-				unset($this->cards[$card->getName()]);
+				unset($this->cards[(string)$card->getName()]);
 			}
 		}
 		
@@ -79,7 +79,7 @@ class Cardlist
 		
 		foreach($this->cards as $card)
 		{
-			if($card->hasType($type))
+			if($card->hasType((string)$type))
 			{
 				$cards[$card->getName()] = $this->cards[$card->getName()];
 			}
@@ -99,6 +99,21 @@ class Cardlist
 	
 	/**
 	 *
+	 * @param string $name
+	 * @return \de\hehosworld\CardSelector\Card
+	 */
+	public function getCard($name)
+	{
+		if(!$this->hasCard($name))
+		{
+			throw new \DomainException("card " . $name . " is not in Cardlist");
+		}
+		
+		return $this->cards[$name];
+	}
+	
+	/**
+	 *
 	 * @param array $cards
 	 * @return Cardlist 
 	 */
@@ -114,8 +129,7 @@ class Cardlist
 		
 		foreach($cards as $card)
 		{
-
-			$this->cards[$card->getName()] = $card;
+			$this->cards[str_replace("\"", "", $card->getName())] = $card;
 		}
 		
 		return $this;
@@ -135,8 +149,58 @@ class Cardlist
 		return $string;
 	}
 	
+	/**
+	 *
+	 * @param string $type
+	 * @return \de\hehosworld\CardSelector\Card
+	 */
 	public function chooseRandomCard($type = "")
 	{
+		$cards = array_values($this->cards);
 		
+		if($type != "")
+		{
+			$cards = array_values($this->getAllCardsWithType((string)$type));
+		}
+		
+		$max = count($cards) - 1;
+		if($max === -1)
+		{
+			throw new \Exception("not enough cards of type ". $type);
+		}
+		return $cards[rand(0, $max)];
+	}
+	
+	/**
+	 *
+	 * @param string $name
+	 * @return boolean 
+	 */
+	public function hasCard($name)
+	{
+		//echo $name;
+		//var_dump($this->cards);
+		return isset($this->cards[$name]);
+	}
+	
+	/**
+	 *
+	 * @param string $type
+	 * @param integer $times
+	 * @return boolean
+	 */
+	public function hasCardsWithType($type, $times = 1)
+	{
+		$counter = 0;
+		
+		foreach($this->cards as $card)
+		{
+			if($card->hasType((string)$type))
+			{
+				$counter++;
+			}
+		}
+		
+		return ($counter >= $times);
 	}
 }

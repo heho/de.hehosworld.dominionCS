@@ -59,7 +59,9 @@ class CardSelector
 		
 		foreach($this->config->cardlists as $cardlist)
 		{
-			echo $this->inputCardlist->addCards(($this->parseCardlist($cardlist->cardlist["src"])));
+			$this->inputCardlist->addCards(
+					$this->parseCardlist($cardlist->cardlist["src"])
+			);
 		}
 	}
 	
@@ -99,8 +101,130 @@ class CardSelector
 		return $cards;
 	}
 	
-	public function generateCardArray()
+	/**
+	 * Checks if maximum of one type has been exceeded. Deletes this type if that happens
+	 */
+	public function checkMaxTypes()
 	{
+		foreach($this->config->max->type as $type)
+		{
+			if($this->outputCardlist->hasCardsWithType((string)$type, $type["number"]))
+			{
+				$this->inputCardlist->deleteAllCardsWithType($type);
+			}
+		}
+	}
+	
+	/**
+	 *
+	 * @return \de\hehosworld\CardSelector\CardList
+	 */
+	public function generateCardlist()
+	{
+		$tmp = array();
 		
+		//<Includes_cards>
+		foreach($this->config->includes->card as $card)
+		{
+			try
+			{
+				$chosenCard = $this->inputCardlist->getCard((string)$card);
+				$this->inputCardlist->deleteCard($chosenCard);
+				$this->outputCardlist->addCard($chosenCard);
+				$this->cardCount = $this->cardCount - 1;
+			}
+			catch(\Exception $e)
+			{
+				echo $e;
+				throw new \Exception("cant generate Cardlist of given config");
+			}
+		}
+		//</Includes_cards>
+		
+		//<Additions>
+		foreach($this->config->additions->card as $card)
+		{
+			try
+			{
+				$chosenCard = $this->inputCardlist->getCard((string)$card);
+				$this->inputCardlist->deleteCard($chosenCard);
+				$tmp[] = $chosenCard;
+			}
+			catch(\Exception $e)
+			{
+				echo $e;
+				throw new \Exception("cant generate Cardlist of given config");
+			}
+		}
+		//</Additions>
+		
+		//<Includes_types>
+		foreach($this->config->includes->type as $type)
+		{
+			
+			try
+			{
+				for($i = 0; $i < $type["number"]; $i++)
+				{
+					if($this->outputCardlist->hasCardsWithType($type, $type["number"]))
+					{
+						break;
+					}
+					$chosenCard = $this->inputCardlist->chooseRandomCard($type);
+					$this->inputCardlist->deleteCard($chosenCard);
+					$this->outputCardlist->addCard($chosenCard);
+					$this->cardCount = $this->cardCount - 1;
+				}
+			}
+			catch(\Exception $e)
+			{
+				echo $e;
+				throw new \Exception("cant generate Cardlist of given config");
+			}
+		}
+		//</Includes_types>
+		
+		//<Exclude_cards>
+		foreach($this->config->excludes->card as $card)
+		{
+			try
+			{
+				$chosenCard = $this->inputCardlist->getCard((string)$card);
+				$this->inputCardlist->deleteCard($chosenCard);
+			}
+			catch(\Exception $e)
+			{
+				echo $e;
+				throw new \Exception("card: " . $card . "does not exist");
+			}
+		}
+		//</Exclude_cards>
+		
+		//<Exclude_types>
+		foreach($this->config->excludes->type as $type)
+		{
+			try
+			{
+				$this->inputCardlist->deleteAllCardsWithType((string)$type);
+			}
+			catch(\Exception $e)
+			{
+				echo $e;
+				throw new \Exception("card: " . $card . "does not exist");
+			}
+		}
+		//</Exclude_types>
+		
+		//<generate>
+		for($i = 0; $i < $this->cardCount; $i++)
+		{
+			$this->checkMaxTypes();
+			$chosenCard = $this->inputCardlist->chooseRandomCard();
+			$this->inputCardlist->deleteCard($chosenCard);
+			$this->outputCardlist->addCard($chosenCard);
+		}
+		//</generate>
+		
+		return $this->outputCardlist;
 	}
 }

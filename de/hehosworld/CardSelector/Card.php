@@ -64,16 +64,24 @@ class Card
 	 */
 	public function addType($type)
 	{
-		$this->types[] = $type;
+		$this->types[] = (string)$type;
 	}
 	
 	/**
 	 * @param String $type
 	 * @return Boolean 
 	 */
-	public function hasType($type)
+	public function hasType($checktype)
 	{
-		return in_array($type, $this->types);
+		foreach($this->types as $type)
+		{
+			if($type === $checktype)
+			{
+				return true;
+			}
+		}
+		
+		return false;
 	}
 	
 	/**
@@ -90,7 +98,8 @@ class Card
 	 */
 	public function getName()
 	{
-		return "\"" . $this->name . "\"";
+		return (string)$this->name;
+		// "\"" . $this->name . "\"";
 	}
 	
 	/**
