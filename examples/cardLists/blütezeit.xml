@@ -1,0 +1,202 @@
+<?xml version='1.0' standalone='yes'?>
+<cardlist overallType='Blütezeit'>
+	<card name='Platin'>
+		<type>Geld</type>
+		<type>9</type>
+	</card>
+	<card name='Kolonie'>
+		<type>Punkte</type>
+		<type>11</type>
+	</card>
+	<card name='Wachturm'>
+		<type>Aktion</type>
+		<type>Reaktion</type>
+		<type>3</type>
+		<type>+Karte</type>
+		<type>entsorgen</type>
+		<type>zurücklegen</type>
+		<type>auswählen</type>
+		<type>Misc</type>
+	</card>
+	<card name='Arbeiterdorf'>
+		<type>Aktion</type>
+		<type>4</type>
+		<type>+Karte</type>
+		<type>+Aktion</type>
+		<type>+Kauf</type>
+	</card>
+	<card name='Gewölbe'>
+		<type>Aktion</type>
+		<type>5</type>
+		<type>+Karte</type>
+		<type>abwerfen</type>
+		<type>+X</type>
+		<type>Misc</type>
+	</card>
+	<card name='Abenteuer'>
+		<type>Geld</type>
+		<type>5</type>
+		<type>aufdecken</type>
+		<type>ablegen</type>
+		<type>Misc</type>
+	</card>
+	<card name='Königliches Siegel'>
+		<type>Geld</type>
+		<type>5</type>
+		<type>zurücklegen</type>
+		<type>Misc</type>
+	</card>
+	<card name='Talisman'>
+		<type>Geld</type>
+		<type>4</type>
+		<type>nehmen</type>
+		<type>Misc</type>
+	</card>
+	<card name='Handelsroute'>
+		<type>Aktion</type>
+		<type>3</type>
+		<type>+Kauf</type>
+		<type>entsorgen</type>
+		<type>+X</type>
+		<type>Misc</type>
+	</card>
+	<card name='Hausierer'>
+		<type>Aktion</type>
+		<type>8</type>
+		<type>preiswechsel</type>
+		<type>+Karte</type>
+		<type>+Aktion</type>
+		<type>+1</type>
+		<type>Misc</type>
+	</card>
+	<card name='Steinbruch'>
+		<type>Geld</type>
+		<type>4</type>
+		<type>preiswechsel</type>
+		<type>Misc</type>
+	</card>
+	<card name='Gesindel'>
+		<type>Aktion</type>
+		<type>Angriff</type>
+		<type>5</type>
+		<type>+Karte</type>
+		<type>aufdecken</type>
+		<type>einsehen</type>
+		<type>ablegen</type>
+		<type>zurücklegen</type>
+		<type>Misc</type>
+	</card>
+	<card name='Münzer'>
+		<type>Aktion</type>
+		<type>5</type>
+		<type>zeigen</type>
+		<type>entsorgen</type>
+		<type>Misc</type>
+	</card>
+	<card name='Denkmal'>
+		<type>Aktion</type>
+		<type>4</type>
+		<type>+Karte</type>
+		<type>+Punkte</type>
+	</card>
+	<card name='Quacksalber'>
+		<type>Aktion</type>
+		<type>Angriff</type>
+		<type>5</type>
+		<type>+2</type>
+		<type>entsorgen</type>
+		<type>verfluchen</type>
+		<type>nehmen</type>
+		<type>Misc</type>
+	</card>
+	<card name='Hort'>
+		<type>Geld</type>
+		<type>6</type>
+		<type>nehmen</type>
+		<type>Misc</type>
+	</card>
+	<card name='Königshof'>
+		<type>Aktion</type>
+		<type>7</type>
+		<type>Misc</type>
+	</card>
+	<card name='Lohn'>
+		<type>Geld</type>
+		<type>3</type>
+		<type>aufdecken</type>
+		<type>entsorgen</type>
+		<type>abwerfen</type>
+		<type>ablegen</type>
+		<type>auswählen</type>
+		<type>Misc</type>
+	</card>
+	<card name='Grosser Markt'>
+		<type>Aktion</type>
+		<type>6</type>
+		<type>+Karte</type>
+		<type>+Aktion</type>
+		<type>+Kauf</type>
+		<type>+2</type>
+	</card>
+	<card name='Kunstschmiede'>
+		<type>Aktion</type>
+		<type>7</type>
+		<type>entsorgen</type>
+		<type>nehmen</type>
+		<type>Misc</type>
+	</card>
+	<card name='Halsabschneider'>
+		<type>Aktion</type>
+		<type>Angriff</type>
+		<type>6</type>
+		<type>+Kauf</type>
+		<type>+2</type>
+		<type>abwerfen</type>
+		<type>+Punkte</type>
+		<type>Misc</type>
+	</card>
+	<card name='Schmuggelware'>
+		<type>Geld</type>
+		<type>5</type>
+		<type>+Kauf</type>
+		<type>Misc</type>
+	</card>
+	<card name='Leihhaus'>
+		<type>Aktion</type>
+		<type>5</type>
+		<type>einsehen</type>
+		<type>kriegen</type>
+		<type>Misc</type>
+	</card>
+	<card name='Ausbau'>
+		<type>Aktion</type>
+		<type>7</type>
+		<type>entsorgen</type>
+		<type>nehmen</type>
+		<type>tauschen</type>
+		<type>Misc</type>
+	</card>
+	<card name='Bank'>
+		<type>Geld</type>
+		<type>7</type>
+		<type>Misc</type>
+	</card>
+	<card name='Bischof'>
+		<type>Aktion</type>
+		<type>4</type>
+		<type>+1</type>
+		<type>+Punkte</type>
+		<type>entsorgen</type>
+		<type>Misc</type>
+	</card>
+	<card name='Stadt'>
+		<type>Aktion</type>
+		<type>5</type>
+		<type>+Karte</type>
+		<type>+Aktion</type>
+		<type>bedingt</type>
+		<type>+Kauf</type>
+		<type>+1</type>
+		<type>Misc</type>
+	</card>
+</cardlist>

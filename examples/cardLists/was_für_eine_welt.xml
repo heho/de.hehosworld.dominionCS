@@ -102,7 +102,6 @@
 	<card name='Gärten'>
 		<type>Punkte</type>
 		<type>4</type>
-		<type>+Punkte</type>
 	</card>
 	<card name='Kapelle'>
 		<type>Aktion</type>
@@ -170,13 +169,6 @@
 		<type>nehmen</type>
 		<type>tauschen</type>
 		<type>Misc</type>
-	</card>
-	<card name='Mine'>
-		<type>Aktion</type>
-		<type>5</type>
-		<type>+Karte</type>
-		<type>+Kauf</type>
-		<type>+GKarte</type>
 	</card>
 	<card name='Bibliothek'>
 		<type>Aktion</type>

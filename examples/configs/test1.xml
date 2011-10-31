@@ -2,6 +2,12 @@
 <DCSconf>
 	<cardlists>
 		<cardlist src='cardLists/was_für_eine_welt.xml' />
+		<cardlist src='cardLists/die_intrige.xml' />
+		<cardlist src='cardLists/seaside.xml' />
+		<cardlist src='cardLists/die_alchemisten.xml' />
+		<cardlist src='cardLists/reiche_ernte.xml' />
+		<cardlist src='cardLists/blütezeit.xml' />
+		<cardlist src='cardLists/hinterland.xml' />
 	</cardlists>
 	<baseConf>
 		<numberOfCards>10</numberOfCards>

@@ -1,0 +1,100 @@
+<?xml version='1.0' standalone='yes'?>
+<cardlist overallType='Die Alchemisten'>
+	<card name='Trank'>
+		<type>Geld</type>
+		<type>4</type>
+	</card>
+	<card name='Golem'>
+		<type>Aktion</type>
+		<type>4</type>
+		<type>T</type>
+		<type>einsehen</type>
+		<type>spielen</type>
+		<type>Misc</type>
+	</card>
+	<card name='Kräuterkundiger'>
+		<type>Aktion</type>
+		<type>2</type>
+		<type>+Kauf</type>
+		<type>+1</type>
+		<type>zurücklegen</type>
+	</card>
+	<card name='Stein der Weisen'>
+		<type>Geld</type>
+		<type>3</type>
+		<type>T</type>
+		<type>+X</type>
+		<type>Misc</type>
+	</card>
+	<card name='Alchemist'>
+		<type>Aktion</type>
+		<type>3</type>
+		<type>T</type>
+		<type>+Karte</type>
+		<type>+Aktion</type>
+		<type>zurücklegen</type>
+		<type>Misc</type>
+	</card>
+	<card name='Apotheker'>
+		<type>Aktion</type>
+		<type>2</type>
+		<type>T</type>
+		<type>+Karte</type>
+		<type>+Aktion</type>
+		<type>einsehen</type>
+		<type>Misc</type>
+	</card>
+	<card name='Lehrling'>
+		<type>Aktion</type>
+		<type>5</type>
+		<type>+Aktion</type>
+		<type>entsorgen</type>
+		<type>+Karte</type>
+		<type>Misc</type>
+	</card>
+	<card name='Vertrauter'>
+		<type>Aktion</type>
+		<type>Angriff</type>
+		<type>3</type>
+		<type>T</type>
+		<type>+Karte</type>
+		<type>+Aktion</type>
+		<type>verfluchen</type>
+	</card>
+	<card name='Besessenheit'>
+		<type>Aktion</type>
+		<type>6</type>
+		<type>T</type>
+		<type>Misc</type>
+	</card>
+	<card name='Vision'>
+		<type>Aktion</type>
+		<type>Angriff</type>
+		<type>2</type>
+		<type>T</type>
+		<type>+Aktion</type>
+		<type>einsehen</type>
+		<type>ablegen</type>
+		<type>+Karte</type>
+		<type>Misc</type>
+	</card>
+	<card name='Verwandlung'>
+		<type>Aktion</type>
+		<type>T</type>
+		<type>entsorgen</type>
+		<type>bedingt</type>
+		<type>nehmen</type>
+		<type>Misc</type>
+	</card>
+	<card name='Universität'>
+		<type>Aktion</type>
+		<type>2</type>
+		<type>T</type>
+		<type>+Aktion</type>
+		<type>nehmen</type>
+	</card>
+	<card name='Weinberg'>
+		<type>Punkte</type>
+		<type>T</type>
+	</card>
+</cardlist>

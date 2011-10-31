@@ -1,0 +1,208 @@
+<?xml version='1.0' standalone='yes'?>
+<cardlist overallType="Seaside">
+	<card name="Embargo">
+		<type>Aktion</type>
+		<type>2</type>
+		<type>+2</type>
+		<type>entsorgen</type>
+		<type>verfluchen</type>
+		<type>bedingt</type>
+		<type>Misc</type>
+	</card>
+	<card name="Karawane">
+		<type>Aktion</type>
+		<type>Dauer</type>
+		<type>4</type>
+		<type>+Karte</type>
+		<type>+Aktion</type>
+	</card>
+	<card name="Bazar">
+		<type>Aktion</type>
+		<type>5</type>
+		<type>+Karte</type>
+		<type>+Aktion</type>
+		<type>+1</type>
+	</card>
+	<card name="Beutelschneider">
+		<type>Aktion</type>
+		<type>4</type>
+		<type>+2</type>
+		<type>ablegen</type>
+		<type>Misc</type>
+	</card>
+	<card name="Botschafter">
+		<type>Aktion</type>
+		<type>Angriff</type>
+		<type>3</type>
+		<type>aufecken</type>
+		<type>entsorgen</type>
+		<type>nehmen</type>
+		<type>Misc</type>
+	</card>
+	<card name="Entdecker">
+		<type>Aktion</type>
+		<type>5</type>
+		<type>zeigen</type>
+		<type>nehmen</type>
+		<type>bedingt</type>
+		<type>Misc</type>
+	</card>
+	<card name="Fischerdorf">
+		<type>Aktion</type>
+		<type>Dauer</type>
+		<type>3</type>
+		<type>+Aktion</type>
+		<type>+1</type>
+	</card>
+	<card name="Geisterschiff">
+		<type>Aktion</type>
+		<type>Angriff</type>
+		<type>5</type>
+		<type>zurücklegen</type>
+		<type>Misc</type>
+	</card>
+	<card name="Hafen">
+		<type>Aktion</type>
+		<type>Dauer</type>
+		<type>2</type>
+		<type>+Karte</type>
+		<type>+Aktion</type>
+		<type>aussetzen</type>
+		<type>Misc</type>
+	</card>
+	<card name="Insel">
+		<type>Aktion</type>
+		<type>Punkte</type>
+		<type>Hybrid</type>
+		<type>4</type>
+		<type>aussetzen</type>
+		<type>Misc</type>
+	</card>
+	<card name="Leuchtturm">
+		<type>Aktion</type>
+		<type>Dauer</type>
+		<type>2</type>
+		<type>+Aktion</type>
+		<type>+1</type>
+		<type>blocken</type>
+		<type>Misc</type>
+	</card>
+	<card name="Ausguck">
+		<type>Aktion</type>
+		<type>3</type>
+		<type>+Aktion</type>
+		<type>einsehen</type>
+		<type>entsorgen</type>
+		<type>nehmen</type>
+		<type>zurücklegen</type>
+		<type>Misc</type>
+	</card>
+	<card name="Handelsschiff">
+		<type>Aktion</type>
+		<type>Dauer</type>
+		<type>5</type>
+		<type>+2</type>
+	</card>
+	<card name="Eingeborenendofr">
+		<type>Aktion</type>
+		<type>2</type>
+		<type>+Akion</type>
+		<type>wählen</type>
+		<type>aussetzen</type>
+		<type>Misc</type>
+	</card>
+	<card name="Navigator">
+		<type>Aktion</type>
+		<type>4</type>
+		<type>+2</type>
+		<type>ablegen</type>
+		<type>wählen</type>
+		<type>zurücklegen</type>
+		<type>Misc</type>
+	</card>
+	<card name="Perlentaucher">
+		<type>Aktion</type>
+		<type>2</type>
+		<type>+Karte</type>
+		<type>+Aktion</type>
+		<type>einsehen</type>
+		<type>zurücklegen</type>
+		<type>wählen</type>
+		<type>Misc</type>
+	</card>
+	<card name="Piratenschiff">
+		<type>Aktion</type>
+		<type>Angriff</type>
+		<type>4</type>
+		<type>wählen</type>
+		<type>aufdecken</type>
+		<type>entsorgen</type>
+		<type>+X</type>
+		<type>Misc</type>
+	</card>
+	<card name="Müllverwerter">
+		<type>Aktion</type>
+		<type>4</type>
+		<type>+Kauf</type>
+		<type>entsorgen</type>
+		<type>+X</type>
+		<type>Misc</type>
+	</card>
+	<card name="Seehexe">
+		<type>Aktion</type>
+		<type>Angriff</type>
+		<type>4</type>
+		<type>ablegen</type>
+		<type>verfluchen</type>
+		<type>Misc</type>
+	</card>
+	<card name="Schmuggler">
+		<type>Aktion</type>
+		<type>3</type>
+		<type>nehmen</type>
+		<type>Misc</type>
+	</card>
+	<card name="Taktiker">
+		<type>Aktion</type>
+		<type>Dauer</type>
+		<type>4</type>
+		<type>ablegen</type>
+		<type>+Karte</type>
+		<type>+Aktion</type>
+		<type>+Kauf</type>
+		<type>Misc</type>
+	</card>
+	<card name="Schatzkarte">
+		<type>Aktion</type>
+		<type>4</type>
+		<type>entsorgen</type>
+		<type>bedingt</type>
+		<type>nehmen</type>
+		<type>Misc</type>
+	</card>
+	<card name="Schatzkammer">
+		<type>Aktion</type>
+		<type>5</type>
+		<type>+Karte</type>
+		<type>+Aktion</type>
+		<type>+1</type>
+		<type>zurücklegen</type>
+		<type>bedingt</type>
+		<type>Misc</type>
+	</card>
+	<card name="Lagerhaus">
+		<type>Aktion</type>
+		<type>3</type>
+		<type>+Karte</type>
+		<type>+Aktion</type>
+		<type>abwerfen</type>
+		<type>Misc</type>
+	</card>
+	<card name="Werft">
+		<type>Aktion</type>
+		<type>Dauer</type>
+		<type>5</type>
+		<type>+Karte</type>
+		<type>+Kauf</type>
+	</card>
+</cardlist>
