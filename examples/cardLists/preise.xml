@@ -1,0 +1,37 @@
+<?xml version='1.0' standalone='yes'?>
+<cardlist overallType='Preis'>
+	<card name='Gefolge'>
+		<type>Aktion</type>
+		<type>Angriff</type>
+		<type>+Karte</type>
+		<type>nehmen</type>
+		<type>verfluchen</type>
+		<type>abwerfen</type>
+		<type>Misc</type>
+	</card>
+	<card name='Prinzessin'>
+		<type>Aktion</type>
+		<type>+Kauf</type>
+		<type>preiswechsel</type>
+	</card>
+	<card name='Streitross'>
+		<type>Aktion</type>
+		<type>wählen</type>
+		<type>+Karte</type>
+		<type>+Aktion</type>
+		<type>+2</type>
+		<type>nehmen</type>
+		<type>wählen</type>
+	</card>
+	<card name='Ein Sack voll Gold'>
+		<type>Aktion</type>
+		<type>+Aktion</type>
+		<type>nehmen</type>
+		<type>zurücklegen</type>
+	</card>
+	<card name='Diadem'>
+		<type>Geld</type>
+		<type>+X</type>
+		<type>Misc</type>
+	</card>
+</cardlist>

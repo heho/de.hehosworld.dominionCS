@@ -1,0 +1,250 @@
+<?xml version='1.0' standalone='yes'?>
+<cardlist overallType="Die Intrige">
+	<card name='Fluch'>
+		<type>Fluch</type>
+		<type>-Punkte</type>
+		<type>0</type>
+	</card>
+	<card name='Gold'>
+		<type>Geld</type>
+		<type>6</type>
+	</card>
+	<card name='Silber'>
+		<type>Geld</type>
+		<type>3</type>
+	</card>
+	<card name='Kupfer'>
+		<type>Geld</type>
+		<type>0</type>
+	</card>
+	<card name='Anwesen'>
+		<type>Punkte</type>
+		<type>2</type>
+	</card>
+	<card name='Herzogtum'>
+		<type>Punkte</type>
+		<type>5</type>
+	</card>
+	<card name='Provinz'>
+		<type>Punkte</type>
+		<type>8</type>
+	</card>
+	<card name="Maskerade">
+		<type>Aktion</type>
+		<type>3</type>
+		<type>+Karte</type>
+		<type>tauschen</type>
+		<type>Misc</type>
+	</card>
+	<card name="Brücke">
+		<type>Aktion</type>
+		<type>4</type>
+		<type>+Kauf</type>
+		<type>+1</type>
+		<type>preiswechsel</type>
+		<type>Misc</type>
+	</card>
+	<card name="Verschwörer">
+		<type>Aktion</type>
+		<type>4</type>
+		<type>+2</type>
+		<type>+Karte</type>
+		<type>+Aktion</type>
+		<type>bedingt</type>
+	</card>
+	<card name="Grosse Halle">
+		<type>Aktion</type>
+		<type>Punkte</type>
+		<type>Hybrid</type>
+		<type>3</type>
+		<type>+Karte</type>
+		<type>+Aktion</type>
+	</card>
+	<card name="Burghof">
+		<type>Aktion</type>
+		<type>2</type>
+		<type>+Karte</type>
+		<type>zurücklegen</type>
+		<type>einsehen</type>
+	</card>
+	<card name="Herzog">
+		<type>Punkte</type>
+		<type>5</type>
+		<type>+Punkte</type>
+	</card>
+	<card name="Anbau">
+		<type>Aktion</type>
+		<type>5</type>
+		<type>+Karte</type>
+		<type>+Aktion</type>
+		<type>entsorgen</type>
+		<type>nehmen</type>
+		<type>tauschen</type>
+		<type>Misc</type>
+	</card>
+	<card name="Baron">
+		<type>Aktion</type>
+		<type>4</type>
+		<type>+Kauf</type>
+		<type>+X</type>
+		<type>abwerfen</type>
+		<type>nehmen</type>
+		<type>bedingt</type>
+		<type>Misc</type>
+	</card>
+	<card name="Eisenhütte">
+		<type>Aktion</type>
+		<type>4</type>
+		<type>nehmen</type>
+		<type>bedingt</type>
+		<type>+Aktion</type>
+		<type>+1</type>
+		<type>+Karte</type>
+		<type>Misc</type>
+	</card>
+	<card name="Saboteur">
+		<type>Aktion</type>
+		<type>Angriff</type>
+		<type>5</type>
+		<type>aufdecken</type>
+		<type>entsorgen</type>
+		<type>nehmen</type>
+		<type>tauschen</type>
+		<type>Misc</type>
+	</card>
+	<card name="Handelsposten">
+		<type>Aktion</type>
+		<type>5</type>
+		<type>entsorgen</type>
+		<type>nehmen</type>
+		<type>tauschen</type>
+		<type>Misc</type>
+	</card>
+	<card name="Trickser">
+		<type>Aktion</type>
+		<type>Angriff</type>
+		<type>3</type>
+		<type>+2</type>
+		<type>entsorgen</type>
+		<type>nehmen</type>
+		<type>tauschen</type>
+		<type>Misc</type>
+	</card>
+	<card name="Kupferschmied">
+		<type>Aktion</type>
+		<type>4</type>
+		<type>preiswechsel</type>
+		<type>Misc</type>
+	</card>
+	<card name="Adelige">
+		<type>Aktion</type>
+		<type>Punkte</type>
+		<type>Hybrid</type>
+		<type>6</type>
+		<type>+Karte</type>
+		<type>+Aktion</type>
+		<type>auswählen</type>
+		<type>Misc</type>
+	</card>
+	<card name="Verwalter">
+		<type>Aktion</type>
+		<type>3</type>
+		<type>+Karte</type>
+		<type>+2</type>
+		<type>entsorgen</type>
+		<type>wählen</type>
+		<type>Misc</type>
+	</card>
+	<card name="Späher">
+		<type>Aktion</type>
+		<type>4</type>
+		<type>aufdecken</type>
+		<type>nehmen</type>
+		<type>zurücklegen</type>
+		<type>einsehen</type>
+		<type>Misc</type>
+	</card>
+	<card name="Tribut">
+		<type>Aktion</type>
+		<type>5</type>
+		<type>aufdecken</type>
+		<type>bedingt</type>
+		<type>+Aktion</type>
+		<type>+X</type>
+		<type>+Karte</type>
+		<type>Misc</type>
+	</card>
+	<card name="Armenviertel">
+		<type>Aktion</type>
+		<type>3</type>
+		<type>+Karte</type>
+		<type>+Aktion</type>
+		<type>bedingt</type>
+		<type>Misc</type>
+	</card>
+	<card name="Kerkermeister">
+		<type>Aktion</type>
+		<type>Angriff</type>
+		<type>5</type>
+		<type>+Karte</type>
+		<type>wählen</type>
+		<type>ablegen</type>
+		<type>verfluchen</type>
+		<type>Misc</type>
+	</card>
+	<card name="Geheimkammer">
+		<type>Aktion</type>
+		<type>Reaktion</type>
+		<type>2</type>
+		<type>+X</type>
+		<type>ablegen</type>
+		<type>block</type>
+		<type>nehmen</type>
+		<type>tauschen</type>
+		<type>Misc</type>
+	</card>
+	<card name="Bergwerk">
+		<type>Aktion</type>
+		<type>4</type>
+		<type>+Karte</type>
+		<type>+Aktion</type>
+		<type>entsorgen</type>
+		<type>+2</type>
+		<type>Misc</type>
+	</card>
+	<card name="Lakai">
+		<type>Aktion</type>
+		<type>Angriff</type>
+		<type>5</type>
+		<type>+Aktion</type>
+		<type>wählen</type>
+		<type>+2</type>
+		<type>ablegen</type>
+		<type>+Karte</type>
+		<type>Misc</type>
+	</card>
+	<card name="Handlanger">
+		<type>Aktion</type>
+		<type>2</type>
+		<type>wählen</type>
+		<type>+Aktion</type>
+		<type>+Karte</type>
+		<type>+Kauf</type>
+		<type>+1</type>
+	</card>
+	<card name="Wunschbrunnen">
+		<type>Aktion</type>
+		<type>3</type>
+		<type>aufdecken</type>
+		<type>einsehen</type>
+		<type>+Karte</type>
+		<type>+Aktion</type>
+		<type>bedingt</type>
+		<type>Misc</type>
+	</card>
+	<card name="Harem">
+		<type>Geld</type>
+		<type>Punkte</type>
+		<type>6</type>
+	</card>
+</cardlist>
