@@ -225,6 +225,8 @@ class CardSelector
 		}
 		//</generate>
 		
+		$this->outputCardlist->addCards($tmp);
+		
 		return $this->outputCardlist;
 	}
 }
