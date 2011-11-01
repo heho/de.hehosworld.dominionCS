@@ -146,6 +146,7 @@ class Cardlist
 		{
 			$string .= $card->__toString() . "\n\n";
 		}
+		
 		return $string;
 	}
 	
@@ -168,6 +169,7 @@ class Cardlist
 		{
 			throw new \Exception("not enough cards of type ". $type);
 		}
+		
 		return $cards[rand(0, $max)];
 	}
 	
@@ -178,8 +180,6 @@ class Cardlist
 	 */
 	public function hasCard($name)
 	{
-		//echo $name;
-		//var_dump($this->cards);
 		return isset($this->cards[$name]);
 	}
 	

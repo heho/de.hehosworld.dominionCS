@@ -104,7 +104,7 @@ class CardSelector
 	/**
 	 * Checks if maximum of one type has been exceeded. Deletes this type if that happens
 	 */
-	public function checkMaxTypes()
+	public function deleteExceededMaxTypes()
 	{
 		foreach($this->config->max->type as $type)
 		{
@@ -123,7 +123,6 @@ class CardSelector
 	{
 		$tmp = array();
 		
-		//<Includes_cards>
 		foreach($this->config->includes->card as $card)
 		{
 			try
@@ -139,9 +138,7 @@ class CardSelector
 				throw new \Exception("cant generate Cardlist of given config");
 			}
 		}
-		//</Includes_cards>
 		
-		//<Additions>
 		foreach($this->config->additions->card as $card)
 		{
 			try
@@ -156,9 +153,7 @@ class CardSelector
 				throw new \Exception("cant generate Cardlist of given config");
 			}
 		}
-		//</Additions>
 		
-		//<Includes_types>
 		foreach($this->config->includes->type as $type)
 		{
 			
@@ -182,9 +177,7 @@ class CardSelector
 				throw new \Exception("cant generate Cardlist of given config");
 			}
 		}
-		//</Includes_types>
 		
-		//<Exclude_cards>
 		foreach($this->config->excludes->card as $card)
 		{
 			try
@@ -198,9 +191,7 @@ class CardSelector
 				throw new \Exception("card: " . $card . "does not exist");
 			}
 		}
-		//</Exclude_cards>
 		
-		//<Exclude_types>
 		foreach($this->config->excludes->type as $type)
 		{
 			try
@@ -213,17 +204,14 @@ class CardSelector
 				throw new \Exception("card: " . $card . "does not exist");
 			}
 		}
-		//</Exclude_types>
 		
-		//<generate>
 		for($i = 0; $i < $this->cardCount; $i++)
 		{
-			$this->checkMaxTypes();
+			$this->deleteExceededMaxTypes();
 			$chosenCard = $this->inputCardlist->chooseRandomCard();
 			$this->inputCardlist->deleteCard($chosenCard);
 			$this->outputCardlist->addCard($chosenCard);
 		}
-		//</generate>
 		
 		$this->outputCardlist->addCards($tmp);
 		
