@@ -155,8 +155,6 @@
 		<type>Angriff</type>
 		<type>3</type>
 		<type>einsehen</type>
-		<type>abwerfen</type>
-		<type>zurücklegen</type>
 		<type>+Karte</type>
 		<type>Misc</type>
 	</card>
@@ -166,7 +164,8 @@
 		<type>5</type>
 		<type>+Karte</type>
 		<type>+Kauf</type>
-		<type>abwerfen</type>
+		<type>+GKarte</type>
+		<type>-GKarte</type>
 		<type>Misc</type>
 	</card>
 	<card name='Blutzoll'>
@@ -201,10 +200,7 @@
 		<type>5</type>
 		<type>+1</type>
 		<type>einsehen</type>
-		<type>entsorgen</type>
 		<type>kriegen</type>
-		<type>nehmen</type>
-		<type>abwerfen</type>
 		<type>Misc</type>
 	</card>
 	<card name='Lebenskünstler'>

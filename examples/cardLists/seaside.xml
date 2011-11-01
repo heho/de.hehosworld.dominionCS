@@ -27,7 +27,7 @@
 		<type>Aktion</type>
 		<type>4</type>
 		<type>+2</type>
-		<type>ablegen</type>
+		<type>-GKarte</type>
 		<type>Misc</type>
 	</card>
 	<card name="Botschafter">
@@ -58,7 +58,7 @@
 		<type>Aktion</type>
 		<type>Angriff</type>
 		<type>5</type>
-		<type>zurücklegen</type>
+		<type>-GKarte</type>
 		<type>Misc</type>
 	</card>
 	<card name="Hafen">
@@ -103,7 +103,7 @@
 		<type>5</type>
 		<type>+2</type>
 	</card>
-	<card name="Eingeborenendofr">
+	<card name="Eingeborenendorf">
 		<type>Aktion</type>
 		<type>2</type>
 		<type>+Akion</type>

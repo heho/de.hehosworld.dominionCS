@@ -191,6 +191,16 @@ class Cardlist
 	 */
 	public function hasCardsWithType($type, $times = 1)
 	{
+		if($times <= 0)
+		{
+			throw new \DomainException("Parameter times must not be below 1");
+		}
+		
+		if(count($this->cards) == 0)
+		{
+			return false;
+		}
+		
 		$counter = 0;
 		
 		foreach($this->cards as $card)
