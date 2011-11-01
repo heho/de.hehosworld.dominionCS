@@ -157,20 +157,20 @@ class Cardlist
 	 */
 	public function chooseRandomCard($type = "")
 	{
-		$cards = array_values($this->cards);
+		$cards = $this->cards;
 		
 		if($type != "")
 		{
-			$cards = array_values($this->getAllCardsWithType((string)$type));
+			$cards = $this->getAllCardsWithType((string)$type);
 		}
 		
-		$max = count($cards) - 1;
-		if($max === -1)
+		
+		if(count($cards) == 0)
 		{
 			throw new \Exception("not enough cards of type ". $type);
 		}
 		
-		return $cards[rand(0, $max)];
+		return $cards[array_rand($cards)];
 	}
 	
 	/**
