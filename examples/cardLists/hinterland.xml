@@ -1,0 +1,230 @@
+<?xml version='1.0' standalone='yes'?>
+<cardlist overallType='Hinterland'>
+	<card name='Grenzdorf'>
+		<type>Aktion</type>
+		<type>6</type>
+		<type>+Karte</type>
+		<type>+Aktion</type>
+		<type>nehmen</type>
+		<type>Misc</type>
+	</card>
+	<card name='Kartograph'>
+		<type>Aktion</type>
+		<type>5</type>
+		<type>+Karte</type>
+		<type>+Aktion</type>
+		<type>einsehen</type>
+		<type>ablegen</type>
+		<type>zurücklegen</type>
+		<type>Misc</type>
+	</card>
+	<card name='Katzengold'>
+		<type>Geld</type>
+		<type>Reaktion</type>
+		<type>Hybrid</type>
+		<type>2</type>
+		<type>bedingt</type>
+		<type>entsorgen</type>
+		<type>nehmen</type>
+		<type>Misc</type>
+	</card>
+	<card name='Botschaft'>
+		<type>Aktion</type>
+		<type>Direkt</type>
+		<type>5</type>
+		<type>+Karte</type>
+		<type>abwerfen</type>
+		<type>nehmen</type>
+		<type>Misc</type>
+	</card>
+	<card name='Herzogin'>
+		<type>Aktion</type>
+		<type>2</type>
+		<type>+2</type>
+		<type>einseh</type>
+		<type>aussuchen</type>
+		<type>abwerfen</type>
+		<type>zurücklegen</type>
+		<type>Misc</type>
+	</card>
+	<card name='Aufbau'>
+		<type>Aktion</type>
+		<type>3</type>
+		<type>entsorgen</type>
+		<type>nehmen</type>
+		<type>tauschen</type>
+		<type>zurücklegen</type>
+		<type>Misc</type>
+	</card>
+	<card name='Wegkreuzung'>
+		<type>Aktion</type>
+		<type>2</type>
+		<type>+Karte</type>
+		<type>zeigen</type>
+		<type>bedingt</type>
+		<type>+Aktion</type>
+		<type>Misc</type>
+	</card>
+	<card name='Schatztruhe'>
+		<type>Geld</type>
+		<type>Direkt</type>
+		<type>5</type>
+		<type>nehmen</type>
+		<type>Misc</type>
+	</card>
+	<card name='Feilscher'>
+		<type>Aktion</type>
+		<type>5</type>
+		<type>+2</type>
+		<type>nehmen</type>
+		<type>Misc</type>
+	</card>
+	<card name='Fruchtbares Land'>
+		<type>Punkte</type>
+		<type>Direkt</type>
+		<type>6</type>
+		<type>entsorgen</type>
+		<type>nehmen</type>
+		<type>tauschen</type>
+		<type>Misc</type>
+	</card>
+	<card name='Fahrender Händler'>
+		<type>Aktion</type>
+		<type>Reaktion</type>
+		<type>4</type>
+		<type>entsorgen</type>
+		<type>nehmen</type>
+		<type>blocken</type>
+		<type>Misc</type>
+	</card>
+	<card name='Gewürzhändler'>
+		<type>Aktion</type>
+		<type>4</type>
+		<type>entsorgen</type>
+		<type>wählen</type>
+		<type>+Karte</type>
+		<type>+Aktion</type>
+		<type>+2</type>
+		<type>+Kauf</type>
+	</card>
+	<card name='Komplott'>
+		<type>Aktion</type>
+		<type>3</type>
+		<type>+Karte</type>
+		<type>+Aktion</type>
+		<type>zurücklegen</type>
+		<type>Misc</type>
+	</card>
+	<card name='Mandarin'>
+		<type>Aktion</type>
+		<type>Direkt</type>
+		<type>5</type>
+		<type>+3</type>
+		<type>zurücklegen</type>
+		<type>Misc</type>
+	</card>
+	<card name='Fernstrasse'>
+		<type>Aktion</type>
+		<type>5</type>
+		<type>+Karte</type>
+		<type>+Aktion</type>
+		<type>preiswechsel</type>
+	</card>
+	<card name='Tunnel'>
+		<type>Punkte</type>
+		<type>Reaktion</type>
+		<type>Hybrid</type>
+		<type>bedingt</type>
+		<type>nehmen</type>
+		<type>Misc</type>
+	</card>
+	<card name='Seidenstrasse'>
+		<type>Punkte</type>
+		<type>4</type>
+		<type>+Punkte</type>
+	</card>
+	<card name='Stallungen'>
+		<type>Aktion</type>
+		<type>5</type>
+		<type>+Karte</type>
+		<type>abwerfen</type>
+		<type>+Aktion</type>
+	</card>
+	<card name='Orakel'>
+		<type>Aktion</type>
+		<type>Angriff</type>
+		<type>3</type>
+		<type>einsehen</type>
+		<type>abwerfen</type>
+		<type>zurücklegen</type>
+		<type>+Karte</type>
+		<type>Misc</type>
+	</card>
+	<card name='Markgraf'>
+		<type>Aktion</type>
+		<type>Angriff</type>
+		<type>5</type>
+		<type>+Karte</type>
+		<type>+Kauf</type>
+		<type>abwerfen</type>
+		<type>Misc</type>
+	</card>
+	<card name='Blutzoll'>
+		<type>Aktion</type>
+		<type>Direkt</type>
+		<type>5</type>
+		<type>nehmen</type>
+		<type>verfluchen</type>
+		<type>Misc</type>
+	</card>
+	<card name='Oase'>
+		<type>Aktion</type>
+		<type>3</type>
+		<type>+Karte</type>
+		<type>+Aktion</type>
+		<type>+1</type>
+		<type>abwerfen</type>
+	</card>
+	<card name='Nomadencamp'>
+		<type>Aktion</type>
+		<type>Direkt</type>
+		<type>4</type>
+		<type>+Kauf</type>
+		<type>+2</type>
+		<type>zurücklegen</type>
+		<type>Misc</type>
+	</card>
+	<card name='Edler Räauber'>
+		<type>Aktion</type>
+		<type>Angriff</type>
+		<type>Direkt</type>
+		<type>5</type>
+		<type>+1</type>
+		<type>einsehen</type>
+		<type>entsorgen</type>
+		<type>kriegen</type>
+		<type>nehmen</type>
+		<type>abwerfen</type>
+		<type>Misc</type>
+	</card>
+	<card name='Lebenskünstler'>
+		<type>Aktion</type>
+		<type>4</type>
+		<type>nehmen</type>
+		<type>einsehen</type>
+		<type>aussuchen</type>
+		<type>zurücklegen</type>
+		<type>abwerfen</type>
+		<type>+Karte</type>
+		<type>entsorgen</type>
+	</card>
+	<card name='Gasthaus'>
+		<type>Aktion</type>
+		<type>Direkt</type>
+		<type>5</type>
+		<type>+Karte</type>
+		<type>+Aktion</type>
+		<type>abwerfen</type>
+		<type>Misc</type>
+	</card>
+</cardlist>

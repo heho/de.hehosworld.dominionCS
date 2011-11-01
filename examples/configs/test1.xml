@@ -1,0 +1,34 @@
+<?xml version='1.0' standalone='yes'?>
+<DCSconf>
+	<cardlists>
+		<cardlist src='cardLists/was_für_eine_welt.xml' />
+		<cardlist src='cardLists/die_intrige.xml' />
+		<cardlist src='cardLists/seaside.xml' />
+		<cardlist src='cardLists/die_alchemisten.xml' />
+		<cardlist src='cardLists/reiche_ernte.xml' />
+		<cardlist src='cardLists/blütezeit.xml' />
+		<cardlist src='cardLists/hinterland.xml' />
+	</cardlists>
+	<baseConf>
+		<numberOfCards>10</numberOfCards>
+	</baseConf>
+	<additions>
+		<card>Anwesen</card>
+		<card>Herzogtum</card>
+		<card>Provinz</card>
+		<card>Kupfer</card>
+		<card>Silber</card>
+		<card>Gold</card>
+		<card>Fluch</card>
+	</additions>
+	<includes>
+		<card>Kapelle</card>
+		<type number="2">2</type>
+	</includes>
+	<excludes>
+		<card>Abenteurer</card>
+	</excludes>
+	<max>
+		<type number="1">5</type>
+	</max>
+</DCSconf>

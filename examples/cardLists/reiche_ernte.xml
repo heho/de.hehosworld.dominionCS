@@ -1,0 +1,115 @@
+<?xml version='1.0' standalone='yes'?>
+<cardlist overallType='Reiche Ernte'>
+	<card name='Füllhorn'>
+		<type>Geld</type>
+		<type>5</type>
+		<type>nehmen</type>
+		<type>entsorgen</type>
+		<type>bedingt</type>
+		<type>Misc</type>
+	</card>
+	<card name='Harlekin'>
+		<type>Aktion</type>
+		<type>Angriff</type>
+		<type>5</type>
+		<type>+2</type>
+		<type>einsehen</type>
+		<type>abwerfen</type>
+		<type>nehmen</type>
+		<type>Misc</type>
+	</card>
+	<card name='Weiler'>
+		<type>Aktion</type>
+		<type>2</type>
+		<type>+Karte</type>
+		<type>+Aktion</type>
+		<type>abwerfen</type>
+		<type>+Kauf</type>
+		<type>Misc</type>
+	</card>
+	<card name='Ernte'>
+		<type>Aktion</type>
+		<type>5</type>
+		<type>einsehen</type>
+		<type>+X</type>
+		<type>Misc</type>
+	</card>
+	<card name='Bauerndorf'>
+		<type>Aktion</type>
+		<type>4</type>
+		<type>+Aktion</type>
+		<type>einsehen</type>
+		<type>+Karte</type>
+		<type>Misc</type>
+	</card>
+	<card name='Wahrsagerin'>
+		<type>Aktion</type>
+		<type>Angriff</type>
+		<type>3</type>
+		<type>+2</type>
+		<type>einsehen</type>
+		<type>zurücklegen</type>
+		<type>Misc</type>
+	</card>
+	<card name='Menagerie'>
+		<type>Aktion</type>
+		<type>3</type>
+		<type>+Aktion</type>
+		<type>zeigen</type>
+		<type>+Karte</type>
+		<type>bedingt</type>
+		<type>Misc</type>
+	</card>
+	<card name='Nachbau'>
+		<type>Aktion</type>
+		<type>4</type>
+		<type>entsorgen</type>
+		<type>nehmen</type>
+		<type>tauschen</type>
+		<type>Misc</type>
+	</card>
+	<card name='Festplatz'>
+		<type>Punkte</type>
+		<type>6</type>
+	</card>
+	<card name='Junge Hexe'>
+		<type>Aktion</type>
+		<type>Angriff</type>
+		<type>4</type>
+		<type>+Karte</type>
+		<type>abwerfen</type>
+		<type>verfluchen</type>
+		<type>zeigen</type>
+		<type>Misc</type>
+	</card>
+	<card name='Turnier'>
+		<type>Aktion</type>
+		<type>4</type>
+		<type>+Aktion</type>
+		<type>bedingt</type>
+		<type>+Karte</type>
+		<type>+1</type>
+		<type>zeigen</type>
+		<type>Misc</type>
+	</card>
+	<card name='Pferdehändler'>
+		<type>Aktion</type>
+		<type>Reaktion</type>
+		<type>Dauer</type>
+		<type>4</type>
+		<type>+3</type>
+		<type>+Kauf</type>
+		<type>aussetzen</type>
+		<type>+Karte</type>
+		<type>Misc</type>
+	</card>
+	<card name='Treibjagt'>
+		<type>Aktion</type>
+		<type>5</type>
+		<type>+Aktion</type>
+		<type>+Karte</type>
+		<type>zeigen</type>
+		<type>einsehen</type>
+		<type>Misc</type>
+	</card>
+</cardlist>
