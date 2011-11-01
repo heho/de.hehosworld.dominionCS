@@ -188,7 +188,7 @@
 		<type>5</type>
 		<type>+Karte</type>
 		<type>wählen</type>
-		<type>ablegen</type>
+		<type>-GKarte</type>
 		<type>verfluchen</type>
 		<type>Misc</type>
 	</card>
@@ -221,6 +221,8 @@
 		<type>+2</type>
 		<type>ablegen</type>
 		<type>+Karte</type>
+		<type>+GKarte</type>
+		<type>-GKarte</type>
 		<type>Misc</type>
 	</card>
 	<card name="Handlanger">

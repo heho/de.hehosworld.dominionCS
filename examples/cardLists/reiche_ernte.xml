@@ -14,7 +14,6 @@
 		<type>5</type>
 		<type>+2</type>
 		<type>einsehen</type>
-		<type>abwerfen</type>
 		<type>nehmen</type>
 		<type>Misc</type>
 	</card>
@@ -48,7 +47,6 @@
 		<type>3</type>
 		<type>+2</type>
 		<type>einsehen</type>
-		<type>zurücklegen</type>
 		<type>Misc</type>
 	</card>
 	<card name='Menagerie'>
