@@ -5,6 +5,6 @@ include '../de/hehosworld/CardSelector/Card.php';
 include '../de/hehosworld/CardSelector/Exceptions/IOException.php';
 
 use de\hehosworld\CardSelector\CardSelector;
-
-$selector = new CardSelector('configs/test1.xml');
+echo "<pre>";
+$selector = new CardSelector('configs/fabi.xml');
 echo $selector->generateCardlist();
