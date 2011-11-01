@@ -57,10 +57,10 @@ class CardSelector
 		$this->inputCardlist = new Cardlist();
 		$this->outputCardlist = new Cardlist();
 		
-		foreach($this->config->cardlists as $cardlist)
+		foreach($this->config->cardlists->cardlist as $cardlist)
 		{
 			$this->inputCardlist->addCards(
-					$this->parseCardlist($cardlist->cardlist["src"])
+					$this->parseCardlist($cardlist["src"])
 			);
 		}
 	}
