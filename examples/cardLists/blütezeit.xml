@@ -80,7 +80,6 @@
 		<type>Angriff</type>
 		<type>5</type>
 		<type>+Karte</type>
-		<type>aufdecken</type>
 		<type>einsehen</type>
 		<type>ablegen</type>
 		<type>zurücklegen</type>
@@ -104,9 +103,7 @@
 		<type>Angriff</type>
 		<type>5</type>
 		<type>+2</type>
-		<type>entsorgen</type>
 		<type>verfluchen</type>
-		<type>nehmen</type>
 		<type>Misc</type>
 	</card>
 	<card name='Hort'>
@@ -151,7 +148,7 @@
 		<type>6</type>
 		<type>+Kauf</type>
 		<type>+2</type>
-		<type>abwerfen</type>
+		<type>-GKarte</type>
 		<type>+Punkte</type>
 		<type>Misc</type>
 	</card>
