@@ -154,6 +154,20 @@ class CardSelector
 			}
 		}
 		
+		foreach($this->config->excludes->card as $card)
+		{
+			try
+			{
+				$chosenCard = $this->inputCardlist->getCard((string)$card);
+				$this->inputCardlist->deleteCard($chosenCard);
+			}
+			catch(\Exception $e)
+			{
+				echo $e;
+				throw new \Exception("card: " . $card . "does not exist");
+			}
+		}
+		
 		foreach($this->config->includes->type as $type)
 		{
 			
@@ -175,20 +189,6 @@ class CardSelector
 			{
 				echo $e;
 				throw new \Exception("cant generate Cardlist of given config");
-			}
-		}
-		
-		foreach($this->config->excludes->card as $card)
-		{
-			try
-			{
-				$chosenCard = $this->inputCardlist->getCard((string)$card);
-				$this->inputCardlist->deleteCard($chosenCard);
-			}
-			catch(\Exception $e)
-			{
-				echo $e;
-				throw new \Exception("card: " . $card . "does not exist");
 			}
 		}
 		
