@@ -26,7 +26,7 @@ class Card
 	 * 
 	 * @var array of string;
 	 */
-	private $informations;
+	private $information;
 	
 	/**
 	 *
@@ -34,7 +34,7 @@ class Card
 	 * @param array of string $types
 	 * @param array of array $information 
 	 */
-	public function __construct($name, array $types = array(), array $informations = array()) 
+	public function __construct($name, array $types = array(), array $information = array()) 
 	{
 		foreach($types as $type)
 		{
@@ -44,18 +44,17 @@ class Card
 			}
 		}
 		
-		foreach($informations as $information)
+		foreach($information as $information)
 		{
 			if(gettype($information) !== "string")
 			{
-				throw new \InvalidArgumentException('Parameter $informations must be array of string');
+				throw new \InvalidArgumentException('Parameter $information must be array of string');
 			}
 		}
 		
-		
-		$this->name = $name;
+		$this->name = (string)$name;
 		$this->types = $types;
-		$this->informations = $informations;
+		$this->information = $information;
 	}
 
 	/**
@@ -68,7 +67,7 @@ class Card
 	}
 	
 	/**
-	 * @param String $type
+	 * @param string $type
 	 * @return Boolean 
 	 */
 	public function hasType($checktype)
@@ -85,7 +84,7 @@ class Card
 	}
 	
 	/**
-	 * @return array of String
+	 * @return array of string
 	 */
 	public function getTypes()
 	{
@@ -94,12 +93,11 @@ class Card
 	
 	/**
 	 *
-	 * @return String
+	 * @return string
 	 */
 	public function getName()
 	{
-		return (string)$this->name;
-		// "\"" . $this->name . "\"";
+		return $this->name;
 	}
 	
 	/**
@@ -118,10 +116,12 @@ class Card
 	{
 		$string = "Card:\n";
 		$string .= "Name: " . $this->name . "\n Types: ";
+		
 		foreach($this->types as $type)
 		{
 			$string .= $type . ", ";
 		}
+		
 		return $string;
 	}
 }
